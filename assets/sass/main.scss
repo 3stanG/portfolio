@@ -1,0 +1,21 @@
+// Color
+$primary: #d8323c;
+$secondary: rgb(59, 64, 85);
+$success: rgb(39, 211, 39);
+
+// Custom Container
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Usage
+.custom-container {
+  @include make-container(50px);
+}
+
+// Imports
+@import "../../node_modules/bootstrap/scss/bootstrap";
